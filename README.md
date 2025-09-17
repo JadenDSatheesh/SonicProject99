@@ -1,4 +1,4 @@
-# Sonic:Project99
+# Sonic: Project '99
 
 TYPES OF GAMEPLAY:
   When you start the game you will be met with two options:
