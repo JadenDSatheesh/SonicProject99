@@ -1,0 +1,199 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+
+if (place_meeting(x, y, obj_hitblock) && invincibilityFrames == false) && !transparent && !blitzPower
+{
+	LockControls = true;
+	
+	stunLock = true;
+	stunLock2 = true;
+	DamageSprite = true;
+	ringLoss = true;
+	
+	
+	longRingTime = true;
+
+	
+	if (stunLock == true && invincibilityFrames == false)
+	{
+		sprite_index = spr_sonic_damage;
+		LockControls = true;
+		alarm[2] = 15;
+		if (obj_enemy.image_xscale == 1)
+		{
+			obj_ringCount.ringCount = 0;
+			vsp = -5;
+		}
+		else if (obj_enemy.image_xscale == -1)
+		{
+			obj_ringCount.ringCount = 0;
+			vsp = -5;
+		}
+	}
+			
+			//else if (hsp < 11)
+			//{
+			//	hsp = 0;
+			//	show_message("SUM");
+			//	hsp = -8;
+			//	sprite_index = spr_sonic_damage;
+			//	alarm[2] = 25;
+			//}
+			//else if (hsp < -11)
+			//{
+			//	hsp = 0;
+			//	show_message("VUM");
+			//	hsp = 8;
+			//	sprite_index = spr_sonic_damage;
+			//	alarm[2] = 25;
+			//}
+		
+
+		
+	
+
+	
+	key_r = false;
+	key_l = false;
+	
+	
+	if (invincibilityFrames == false && shieldPower == false)
+	{
+		if (obj_ringCount.totalRing > 0 && ringLoss == true && !ringPass)
+		{
+			
+			ringCrash = true;
+			
+			ring_count = obj_ringCount.totalRing; // Save the current ring count
+		    if (ring_count > 20)
+			{
+				ring_count = 15;
+			}
+			totalRing = 0; // Reset the player’s ring count to zero
+
+		    for (var i = 0; i < ring_count; i++)
+			{
+		        // Create a ring object at the player’s position
+		        var ringScatter = instance_create_layer(x, y - 60, "RingLossLayer", obj_lostRing);
+		        ringScatter.speed = random_range(1, 5);
+				// Set a random speed
+		        ringScatter.direction = random(360);     // Scatter in a random direction
+		    }
+			ringLoss = false;
+			
+			alarm[1] = 500;
+	
+			ringCount = 0;
+			obj_ringCount.totalRing = 0;
+			ringPass = true;
+			alarm[0] = 60
+		}
+		else if (obj_ringCount.totalRing == 0 && ringLoss && !ringPass)
+		{
+			global.Lives--;
+			
+			if (global.Lives >= 0 && Ihit = false)
+			{
+				//show_message("humthebum")
+				obj_ringCount.next_ring_life = 5;
+				Ihit = true;
+			}
+			if (global.Lives <= 0)
+			{
+				if swapCount == 1
+				{
+					image_speed = 0;
+					sprite_index = spr_manic_dead;
+					if vsp < 0
+						image_index = 0;
+					else
+						image_index = 1;
+				}
+				else
+					sprite_index = spr_sonic_dead;
+				ringLoss = true;
+				vsp = -7;
+				hsp = 0;
+				instance_deactivate_object(obj_camera);
+				alarm[11] = 55;
+				SavePointHit = false;
+				transparent = true;
+				alarm[6] = 100;
+			}
+			else if global.Lives <= 0 
+			{
+				if swapCount == 1
+				{
+					image_speed = 0;
+					sprite_index = spr_manic_dead;
+					if vsp < 0
+						image_index = 0;
+					else
+						image_index = 1;
+				}
+				else
+					sprite_index = spr_sonic_dead;
+					
+				ringLoss = true;
+				vsp = -7;
+				hsp = 0;
+				instance_deactivate_object(obj_camera);
+				
+				alarm[6] = 80;
+				SavePointHit = false;
+				transparent = true;
+			}
+			else if (global.Lives > 0 && SavePointHit == true)
+			{
+				if swapCount == 1
+				{
+					image_speed = 0;
+					sprite_index = spr_manic_dead;
+					if vsp < 0
+						image_index = 0;
+					else
+						image_index = 1;
+				}
+				else
+					sprite_index = spr_sonic_dead;
+				ringLoss = true;
+				vsp = -7;
+				hsp = 0;
+				obj_ringCount.next_ring_life = 5;
+				instance_deactivate_object(obj_camera);
+				alarm[11] = 55;
+				transparent = true;
+				alarm[6] = 90;
+			}
+			else if (global.Lives > 0 && SavePointHit == false)
+			{
+				//show_message("Ihit this");
+				global.Lives--;
+				ringLoss = true;
+				if swapCount == 1
+				{
+					image_speed = 0;
+					sprite_index = spr_manic_dead;
+					if vsp < 0
+						image_index = 0;
+					else
+						image_index = 1;
+				}
+				else
+					sprite_index = spr_sonic_dead;
+				vsp = -7;
+				hsp = 0;
+				obj_ringCount.next_ring_life = 5;
+				instance_deactivate_object(obj_camera);
+				alarm[11] = 60;
+				transparent = true;
+				alarm[6] = 90;
+			}
+		}
+	}
+		
+}
+
+if shieldPower == true
+	shieldPower = false;

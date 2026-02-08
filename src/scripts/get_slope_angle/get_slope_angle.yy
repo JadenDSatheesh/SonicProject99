@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"get_slope_angle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_slope_angle",
+  "parent":{
+    "name":"Platform-Scripts",
+    "path":"folders/Scripts/Platform-Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

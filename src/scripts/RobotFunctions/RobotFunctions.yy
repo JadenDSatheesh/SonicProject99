@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"RobotFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RobotFunctions",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

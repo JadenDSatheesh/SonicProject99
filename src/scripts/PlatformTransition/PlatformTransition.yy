@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlatformTransition",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlatformTransition",
+  "parent":{
+    "name":"Platform-Scripts",
+    "path":"folders/Scripts/Platform-Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

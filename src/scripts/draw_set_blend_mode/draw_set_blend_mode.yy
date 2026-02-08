@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_set_blend_mode",
+  "isCompatibility":true,
+  "isDnD":false,
+  "name":"draw_set_blend_mode",
+  "parent":{
+    "name":"Platform-Scripts",
+    "path":"folders/Scripts/Platform-Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

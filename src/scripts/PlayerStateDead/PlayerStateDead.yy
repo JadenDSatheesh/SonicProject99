@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PlayerStateDead",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlayerStateDead",
+  "parent":{
+    "name":"PlayerStates",
+    "path":"folders/Scripts/PlayerStates.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

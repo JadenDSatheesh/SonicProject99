@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DropItems",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DropItems",
+  "parent":{
+    "name":"EntityHit",
+    "path":"folders/Scripts/EntityHit.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

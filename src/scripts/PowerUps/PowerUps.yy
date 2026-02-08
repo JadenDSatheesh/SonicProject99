@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"PowerUps",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PowerUps",
+  "parent":{
+    "name":"Platform-Scripts",
+    "path":"folders/Scripts/Platform-Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
