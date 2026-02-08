@@ -1,5 +1,8 @@
 # Sonic: Project '99
 
+Sonic is my favourite game character, so, I used it to create an experimental game that exercises players fast and quick decision making and dexterity. You can run it on your computer by running the executable - download it (Sonic Beta.zip). You can also checkout the source code for reference.
+
+
 TYPES OF GAMEPLAY:
   When you start the game you will be met with two options:
   - Hub World
